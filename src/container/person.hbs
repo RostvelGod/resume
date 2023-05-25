@@ -1,0 +1,127 @@
+<div>
+  {{#with person}}
+    <div>
+      <h1>{{name}}</h1>
+
+      <p>age: {{age}}</p>
+
+      <p>gender: {{gender}}</p>
+
+      {{#with address}}
+        <address>
+          {{street}},
+          {{city}},
+          {{state}},
+          {{zip}},
+          {{country}}</address>
+      {{/with}}
+
+      <hr />
+    </div>
+
+    {{#each education}}
+      <h2>Education</h2>
+
+      <p>degree: {{degree}}</p>
+
+      <p>major: {{major}}</p>
+
+      <p>university: {{university}} ({{graduationYear}})</p>
+
+    {{/each}}
+
+    <hr />
+
+    {{#each workExperience}}
+      <h2>WorkExperience</h2>
+
+      <p>company: {{company}}</p>
+
+      <p>title: {{title}}</p>
+
+      <p>{{startDate}} - {{endDate}}</p>
+
+      <p>{{responsibilities}}</p>
+    
+
+    <hr />
+
+    {{#each employees}}
+      <h2>Employees</h2>
+
+      <p>name: {{name}}</p>
+
+      <p>position: {{position}}</p>
+
+      <p>department: {{department}}</p>
+    
+
+    <hr />
+
+    {{#each projects}}
+      <h2>Projects</h2>
+
+      <p>name: {{name}}</p>
+
+      <p>{{description}}</p>
+
+      <p>status: {{status}}</p>
+    
+
+    <hr />
+
+    {{#each teams}}
+      <h2>Teams</h2>
+
+      <p>name: {{team_name}}</p>
+
+
+      {{#with team_leader}}
+      <p>{{name}}  ({{title}})</p>
+
+      <a href="">{{email}}</a>
+
+      <hr>
+
+      <h2>Team members</h2>
+      {{#each ../team_member}}
+      <p>{{name}}</p>
+
+      <p>{{title}}</p>
+
+      <a href="">{{email}}</a>
+
+      <p>skills: {{skills}}</p>
+
+      <hr>
+
+      {{#each projects}}
+      <h2>Projects</h2>
+
+      <p>name: {{name}}</p>
+
+      <p>{{description}}</p>
+      
+      <h3>Technologies</h3>
+
+      <p>{{technologies}}</p>
+
+      <h3>Team members</h3>
+
+      {{#each team_members}}
+      <p>{{name}}</p>
+
+      <p>{{title}}</p>
+      {{/each}}
+
+        {{/each}}
+        {{/each}}
+        {{/with}}
+    {{/each}}
+    {{/each}}
+    {{/each}}
+  {{/each}}
+
+  {{/with}}
+
+</div>

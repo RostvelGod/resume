@@ -282,11 +282,8 @@ router.get('/work', function (req, res) {
 })
 // ================================================================
 
-// ================================================================
-
-//              ↙ тут вводимо шлях (PATH) до сторінки
 router.get('/person', function (req, res) {
-  //             ↙ cюди вводимо назву файлу з сontainer
+  //             ↙️ cюди вводимо назву файлу з сontainer
   res.render('person', {
     layout: 'person',
 
@@ -341,7 +338,7 @@ router.get('/person', function (req, res) {
                         title: 'Team Leader',
                         email: 'john.smith@example.com',
                       },
-                      team_members: [
+                      team_member: [
                         {
                           name: 'Alice Johnson',
                           title: 'Software Engineer',

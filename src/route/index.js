@@ -248,7 +248,7 @@ router.get('/work', function (req, res) {
           projects: [
             {
               name: 'Resume',
-              url: 'https://resume.com.ua/',
+              url: 'https://www.google.com/',
               about: 'Game, Unice, Livesta, Avon',
               stacks: [
                 {

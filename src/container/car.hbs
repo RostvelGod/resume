@@ -1,0 +1,109 @@
+<div>
+
+  <h1>Car</h1>
+  <h3>{{make}} {{model}}</h3>
+  <p>year: {{year}}</p>
+  <p>color: {{color}}</p>
+
+  <hr />
+
+  {{#with features}}
+    {{#with interior}}
+      <h3>seats</h3>
+
+      <p>material: {{seats.material}}</p>
+      <p>color: {{seats.color}}</p>
+      <p>heated: {{seats.heated}}</p>
+      <p>ventilated: {{seats.ventilated}}</p>
+
+      <h3>Dashboard</h3>
+
+      <p>material: {{dashboard.material}}</p>
+      <p>color: {{dashboard.color}}</p>
+
+      <h3>display:</h3>
+
+      <p>type: {{dashboard.display.type}}</p>
+      <p>size: {{dashboard.display.size}}</p>
+      <p>resolution: {{dashboard.display.resolution}}</p>
+      <p>touchscreen: {{dashboard.display.touchscreen}}</p>
+
+      <h3>Audio</h3>
+
+      <p>system: {{audio.system}}</p>
+      <p>speakers: {{audio.speakers}}</p>
+      <p>subwoofer: {{audio.subwoofer}}</p>
+      <p>bluetooth: {{audio.bluetooth}}</p>
+      <p>USB: {{audio.USB}}</p>
+
+    {{/with}}
+
+    <br />
+
+    <h3>Wheels</h3>
+    {{#with exterior}}
+      <p>size: {{wheels.size}}</p>
+      <p>type: {{wheels.type}}</p>
+      <p>color: {{wheels.color}}</p>
+
+      <h3>Headlights</h3>
+
+      <p>type: {{headlights.type}}</p>
+      <p>brightness: {{headlights.brightness}}</p>
+      <p>automatic: {{headlights.automatic}}</p>
+    {{/with}}
+
+    <h3>airbags</h3>
+    {{#with safety}}
+      <p>front: {{airbags.front}}</p>
+      <p>side: {{airbags.side}}</p>
+      <p>knee: {{airbags.knee}}</p>
+      <p>rear: {{airbags.rear}}</p>
+
+      <h3>Assistance</h3>
+
+      <p>blind_spot_monitoring:
+        {{assistance.blind_spot_monitoring}}</p>
+      <p>rear_cross_traffic_alert:
+        {{assistance.rear_cross_traffic_alert}}</p>
+      <p>lane_departure_warning:
+        {{assistance.lane_departure_warning}}</p>
+      <p>adaptive_cruise_control:
+        {{assistance.adaptive_cruise_control}}</p>
+      <p>collision_warning:
+        {{assistance.collision_warning}}</p>
+    {{/with}}
+  {{/with}}
+
+  <h3>Engine</h3>
+
+  <p>type: {{engine.type}}</p>
+  <p>displacement: {{engine.displacement}}</p>
+  <p>horsepower: {{engine.horsepower}}</p>
+  <p>torque: {{engine.torque}}</p>
+
+  <h3>Transmission</h3>
+
+  <p>type: {{engine.transmission.type}}</p>
+  <p>gears: {{engine.transmission.gears}}</p>
+
+  <h3>Fuel_economy</h3>
+
+  <p>city: {{fuel_economy.city}}</p>
+  <p>highway: {{fuel_economy.highway}}</p>
+  <p>combined: {{fuel_economy.combined}}</p>
+
+  <h3>Price</h3>
+
+  <p>base: {{price.base}}</p>
+  <p>destination: {{price.destination}}</p>
+
+  <h3>Options</h3>
+
+  <p>navigation: {{price.options.navigation}}</p>
+  <p>moonroof: {{price.options.moonroof}}</p>
+  <p>premium_paint: {{price.options.premium_paint}}</p>
+
+  <h3>total: {{price.total}}</h3>
+
+</div>

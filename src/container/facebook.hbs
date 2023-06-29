@@ -18,6 +18,12 @@
       <p>name: {{name}}</p>
       <p>gender: {{gender}}</p>
       <p>age: {{age}}</p>
+
+      {{#each groups}}
+        <p>id: {{id}}</p>
+        <p>name: {{name}}</p>
+        <p>description: {{description}}</p>
+      {{/each}}
     {{/each}}
 
     <h3>Mutual_friends</h3>
@@ -27,25 +33,14 @@
       <p>name: {{name}}</p>
       <p>gender: {{gender}}</p>
       <p>age: {{age}}</p>
+
+      {{#each members}}
+        <p>id: {{id}}</p>
+        <p>name: {{name}}</p>
+        <p>gender: {{gender}}</p>
+        <p>age: {{age}}</p>
+      {{/each}}
     {{/each}}
-
-    <h3>Groups</h3>
-
-    {{#each groups}}
-      <p>id: {{id}}</p>
-      <p>name: {{name}}</p>
-      <p>description: {{description}}</p>
-    {{/each}}
-
-    <h3>Members</h3>
-
-    {{#each members}}
-      <p>id: {{id}}</p>
-      <p>name: {{name}}</p>
-      <p>gender: {{gender}}</p>
-      <p>age: {{age}}</p>
-    {{/each}}
-
   {{/each}}
 
 </div>

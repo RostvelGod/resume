@@ -1,0 +1,76 @@
+<div>
+  <h1>Mac</h1>
+  <p>name: {{name}}</p>
+  <p>description: {{description}}</p>
+  <p>price: {{price}}</p>
+  <p>category: {{category}}</p>
+
+  <hr />
+
+  {{#with features}}
+    <h3>Processor</h3>
+    <p>brand: {{processor.brand}}</p>
+    <p>model: {{processor.model}}</p>
+    <p>speed: {{processor.speed}}</p>
+    <p>cores: {{processor.cores}}</p>
+    <p>cache: {{processor.cache}}</p>
+
+    <h3>Memory</h3>
+
+    <p>type: {{memory.type}}</p>
+    <p>size: {{memory.size}}</p>
+    <p>speed: {{memory.speed}}</p>
+
+    <h3>Storage</h3>
+
+    <p>type: {{storage.type}}</p>
+    <p>size: {{storage.size}}</p>
+
+    <h3>Display</h3>
+
+    <p>size: {{display.size}}</p>
+    <p>resolution: {{display.resolution}}</p>
+    <p>technology: {{display.technology}}</p>
+    <p>color_space: {{display.color_space}}</p>
+    <p>brightness: {{display.brightness}}</p>
+    <p>refresh_rate: {{display.refresh_rate}}</p>
+
+    <h3>Graphics</h3>
+
+    <p>brand: {{graphics.brand}}</p>
+    <p>model: {{graphics.model}}</p>
+    <p>memory: {{graphics.memory}}</p>
+
+    <h3>Ports</h3>
+    {{#each ports}}
+
+      <p>type: {{type}}</p>
+      <p>count: {{count}}</p>
+
+      {{features}}
+    {{/each}}
+
+    <h3>Battery</h3>
+
+    <p>type: {{battery.type}}</p>
+    <p>capacity: {{battery.capacity}}</p>
+    <p>life: {{battery.life}}</p>
+
+    <h3>weight: {{weight}}</h3>
+
+    <h3>Dimensions</h3>
+
+    <p>height: {{dimensions.height}}</p>
+    <p>width: {{dimensions.width}}</p>
+    <p>depth {{dimensions.depth}}</p>
+
+    <h3>operating_system: {{operating_system}}</h3>
+
+    <h3>Accessories</h3>
+    {{#each accessories}}
+      <p>name: {{name}}</p>
+      <p> price: {{price}}</p>
+    {{/each}}
+  {{/with}}
+
+</div>

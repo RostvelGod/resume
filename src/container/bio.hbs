@@ -1,0 +1,103 @@
+<div>
+  {{#with bio}}
+    <div>
+      <h1>{{name}}</h1>
+
+      <p>birthdate: {{birthdate}}</p>
+
+      <p>birthplace: {{birthplace}}</p>
+
+      <p>deathdate: {{deathdate}}</p>
+
+      <p>deathplace: {{deathplace}}</p>
+
+      <p>nationality: {{nationality}}</p>
+
+      <p>occupation: {{occupation}}</p>
+
+      <p>{{known_for}}</p>
+
+      <hr />
+    </div>
+
+    {{#each education}}
+      <h2>Education</h2>
+      <p>degree: {{degree}}</p>
+
+      <p>field: {{field}}</p>
+
+      <p>institution: {{institution}}</p>
+
+      <p>year: {{year}}</p>
+    {{/each}}
+
+    <br />
+
+    {{#each notable_publications}}
+      <h2>Notable_publications</h2>
+      <p>title: {{title}}</p>
+
+      <p>year: {{year}}</p>
+
+      <p>publisher: {{publisher}}</p>
+    {{/each}}
+
+    <br />
+
+    {{#each partners}}
+      <h2>Partners</h2>
+      <p>name: {{name}}</p>
+
+      <p>relationship: {{relationship}}</p>
+
+      <p>years: {{years}}</p>
+    {{/each}}
+
+    <br />
+
+    {{#each awards}}
+      <h2>Awards</h2>
+      <p>title: {{title}}</p>
+
+      <p>year: {{year}}</p>
+
+      <p>description: {{description}}</p>
+
+    {{/each}}
+
+    <br />
+
+    <h2>Influences</h2>
+    <p>influences: {{influences}}</p>
+
+    <p>influenced: {{influenced}}</p>
+
+    <p>quotes: {{quotes}}</p>
+
+    <br />
+
+    {{#each major_discoveries}}
+      <h2>Major_discoveries</h2>
+
+      <p>title: {{title}}</p>
+
+      <p>year: {{year}}</p>
+
+      <p>description: {{description}}</p>
+    {{/each}}
+
+    <br />
+    {{#with contributions}}
+      <h2>Contributions</h2>
+
+      <p>title: {{title}}</p>
+
+      <p>description: {{description}}</p>
+
+      <p>year: {{year}}</p>
+
+      <p>field: {{field}}</p>
+    {{/with}}
+
+  {{/with}}
+</div>
